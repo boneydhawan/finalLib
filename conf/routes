@@ -1,0 +1,30 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+#GET     /                           com.tekizma.controllers.MainController.index()
+GET    /register                     com.tekizma.controllers.MainController.addStudent()
+GET    /validate                     com.tekizma.controllers.MainController.isAuthorized()
+GET    /getBooks                     com.tekizma.controllers.MainController.getBooksDetail()
+GET    /addBook                      com.tekizma.controllers.MainController.addBookToDb()
+GET    /getCategory                  com.tekizma.controllers.MainController.getBooksCategory()
+GET    /getAllUserDetails            com.tekizma.controllers.MainController.getAllUserDetails()
+GET    /getRoles                     com.tekizma.controllers.MainController.getRoles()
+GET    /removeBook                   com.tekizma.controllers.MainController.removeBook()
+GET    /getProjectDetails            com.tekizma.controllers.MainController.getProjectDetails()
+GET    /changePassword				 com.tekizma.controllers.MainController.changePassword()
+
+GET    /getUserBasedOnRollNo	     com.tekizma.controllers.MainController.getUserBasedOnRollNo()
+GET    /issueBook	                 com.tekizma.controllers.MainController.issueBook()
+GET    /changeQuantity	             com.tekizma.controllers.MainController.changeQuantity()
+
+
+GET    /getBookIssueUsers	          com.tekizma.controllers.MainController.getBookIssueUsers
+GET    /returnedBook	              com.tekizma.controllers.MainController.returnedBook()
+GET    /getBookHistory	              com.tekizma.controllers.MainController.getBookHistory()
+GET    /updateDetails	              com.tekizma.controllers.MainController.updateDetails()
+GET    /forgotPassword	              com.tekizma.controllers.MainController.forgotPassword()
+
+# Map static resources from the /public folder to the /assets URL path
+#GET     /assets/*file               controllers.Assets.at(path="/public", file)
